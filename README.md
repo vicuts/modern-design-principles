@@ -19,9 +19,11 @@ npx skills add vicuts/modern-design-principles --list
 npx skills add vicuts/modern-design-principles --agent claude-code
 ```
 
-`npx skills` discovers any folder containing a `SKILL.md`, at the repo root or one to two levels deep (`skills/<name>/SKILL.md`). This folder is self-contained: publish it as its own repo, or drop it into a skills collection.
+The skill lives in [`skills/modern-design-principles/`](skills/modern-design-principles). `npx skills` copies that whole directory (`SKILL.md` plus its `references/`) into your agent's skills directory.
 
-To install locally without publishing, copy the folder into your agent's skills directory (for Claude Code, `~/.claude/skills/`).
+> The skill is nested in `skills/<name>/` on purpose. A `SKILL.md` placed at a repo root installs on its own, without sibling folders, so bundled `references/` would be left behind. Keeping it one level down under `skills/` makes the CLI copy the full directory.
+
+To install locally without publishing, copy `skills/modern-design-principles/` into your agent's skills directory (for Claude Code, `~/.claude/skills/`).
 
 ## Slash command (optional)
 
@@ -48,6 +50,8 @@ mkdir -p .claude/commands && cp commands/modern-design.md .claude/commands/
 The command assumes the `modern-design-principles` skill is installed (it invokes it by name). Rename the trigger by renaming the file (for example `~/.claude/commands/design-review.md` gives you `/design-review`).
 
 ## What is inside
+
+Repo layout: the installable skill is in `skills/modern-design-principles/`; the optional slash command and this README sit at the repo root.
 
 | File | Contents |
 | --- | --- |
