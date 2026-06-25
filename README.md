@@ -23,6 +23,30 @@ npx skills add vicuts/modern-design-principles --agent claude-code
 
 To install locally without publishing, copy the folder into your agent's skills directory (for Claude Code, `~/.claude/skills/`).
 
+## Slash command (optional)
+
+The repo ships a Claude Code slash command, `/modern-design`, that explicitly invokes the skill and then builds or reviews UI based on what you pass it:
+
+```
+/modern-design                          # review the UI in the current project
+/modern-design review src/components     # review a specific path
+/modern-design build a pricing page      # build something new with the principles
+```
+
+`npx skills` installs skills only, not commands, so the command is a separate copy step. Install it for Claude Code with:
+
+```bash
+# user-wide (available in every project)
+mkdir -p ~/.claude/commands && curl -fsSL \
+  https://raw.githubusercontent.com/vicuts/modern-design-principles/main/commands/modern-design.md \
+  -o ~/.claude/commands/modern-design.md
+
+# or per-project
+mkdir -p .claude/commands && cp commands/modern-design.md .claude/commands/
+```
+
+The command assumes the `modern-design-principles` skill is installed (it invokes it by name). Rename the trigger by renaming the file (for example `~/.claude/commands/design-review.md` gives you `/design-review`).
+
 ## What is inside
 
 | File | Contents |
@@ -35,6 +59,7 @@ To install locally without publishing, copy the folder into your agent's skills 
 | `references/components.md` | Buttons, forms, cards, navigation, modals, dropdowns, search, states. |
 | `references/surfaces.md` | Shadows and elevation, concentric radius, borders, image outlines, hit areas. |
 | `references/motion.md` | Easing, duration, interruptible animations, micro-interactions, performance. |
+| `commands/modern-design.md` | Optional Claude Code slash command (`/modern-design`) that invokes the skill. |
 
 ## How it triggers
 
