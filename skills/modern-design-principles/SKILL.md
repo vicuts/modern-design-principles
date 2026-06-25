@@ -1,6 +1,6 @@
 ---
 name: modern-design-principles
-description: Modern, anti-AI-slop design guidelines for building and reviewing any interface. Use whenever designing, styling, building, or reviewing a website, landing page, UI component, dashboard, app screen, or design system, and especially when the output risks looking AI-generated (purple/indigo gradients, decorative glow, glassmorphism, em-dash-laden copy, eyebrow labels, decorative monospace, emoji bullets, generic centered hero). Covers spacing and the 8pt grid, color and palette construction, typography and type scale, buttons, forms, cards, navigation, shadows and elevation, motion, accessibility, and a full anti-slop checklist. Trigger on "design guidelines", "make this look modern/professional/expensive", "does this look AI-generated", "design review", "UI principles", "clean up this interface", or any spacing, color, typography, or component decision.
+description: Modern, anti-AI-slop design guidelines for building and reviewing any interface. Use whenever designing, styling, building, or reviewing a website, landing page, UI component, dashboard, app screen, or design system, and especially when the output risks looking AI-generated (purple/indigo gradients, decorative glow, glassmorphism, em-dash-laden copy, eyebrow labels, decorative monospace, emoji bullets, generic centered hero). Covers spacing and the 8pt grid, color and palette construction, typography and type scale, buttons, forms, cards, navigation, shadows and elevation, motion, accessibility, a full anti-slop checklist, design-direction selection, business-model fit, and redesign audits. Trigger on "design guidelines", "make this look modern/professional/expensive", "does this look AI-generated", "design review", "UI principles", "clean up this interface", or any spacing, color, typography, or component decision.
 ---
 
 # Modern Design Principles
@@ -20,11 +20,13 @@ The fastest way to make an interface look cheap and machine-made is to reach for
 - **Default indigo/violet** (`#6366f1` and neighbors) as the brand color, plus neon glow shadows and glassmorphism on everything.
 - **Emoji as icons or bullets** (✨🚀💡) and rule-of-three buzzword copy ("fast, simple, and powerful").
 
-This is the headline of the skill. The complete catalog, with the correct replacement for each pattern, is in [anti-slop.md](references/anti-slop.md). Read it first on any greenfield design or "make this look better" request.
+This is the headline of the skill. Two reference files carry it: [anti-slop-guidelines.md](references/anti-slop-guidelines.md) is the operating playbook (read the brief first, pick one design direction, match the business model, stay specific), and [anti-slop.md](references/anti-slop.md) is the granular catalog of tells with the correct replacement for each. On any greenfield design or "make this look better" request, start with the playbook, then keep the catalog in view while you build.
+
+Before making anything, write one sentence: *Reading this as: [page/product type] for [audience], with a [visual language], optimized for [main action].* If you cannot write that sentence, you do not understand the brief yet.
 
 ## How to use this skill
 
-**When building UI:** start from foundations and work down. Set a spacing scale and grid, build a type scale, construct a restrained palette, then assemble components. The reference files are ordered to match this flow. Do not skip straight to decoration.
+**When building UI:** first write the one-sentence read above and commit to a single design direction (the playbook lists the options). Then start from foundations and work down. Set a spacing scale and grid, build a type scale, construct a restrained palette, then assemble components. The reference files are ordered to match this flow. Do not skip straight to decoration.
 
 **When reviewing UI:** scan against the anti-slop catalog first (it catches the loudest problems fastest), then walk the checklist at the bottom of this file. Report findings using the review output format below.
 
@@ -34,7 +36,8 @@ Pull in the relevant reference file rather than guessing. Each one is a focused 
 
 | Read this | When you are working on |
 | --- | --- |
-| [anti-slop.md](references/anti-slop.md) | Anything that could look AI-generated. Copy tells, visual tells, banned defaults, and the correct replacement for each. Start here. |
+| [anti-slop-guidelines.md](references/anti-slop-guidelines.md) | The operating playbook. Read the brief first, pick one design direction, match the business model, handle redesigns, stay specific. Plus opinionated defaults (fonts, color, CTAs) and a final checklist. Start here on any new design. |
+| [anti-slop.md](references/anti-slop.md) | The granular catalog of individual tells, copy and visual, with the correct replacement for each. Use while hunting and fixing. |
 | [foundations.md](references/foundations.md) | Spacing, the 8pt grid, layout grids, visual hierarchy, white space, alignment, Gestalt grouping. |
 | [color.md](references/color.md) | Building a palette, the 60-30-10 split, tinting neutrals, status colors, contrast, dark mode, tasteful gradients. |
 | [typography.md](references/typography.md) | Type scale, line height, line length, weight pairing, alignment, tabular numbers, text wrapping. |

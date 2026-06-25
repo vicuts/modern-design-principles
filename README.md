@@ -56,7 +56,8 @@ Repo layout: the installable skill is in `skills/modern-design-principles/`; the
 | File | Contents |
 | --- | --- |
 | `SKILL.md` | Overview, core principles, the anti-slop summary, review format, checklist. |
-| `references/anti-slop.md` | The headline. Copy tells, visual tells, banned defaults, and the fix for each. |
+| `references/anti-slop-guidelines.md` | The operating playbook: read-first, pick one design direction, business-model fit, redesigns, opinionated defaults, final checklist. |
+| `references/anti-slop.md` | The granular catalog. Copy tells, visual tells, banned defaults, and the fix for each. |
 | `references/foundations.md` | Spacing, the 8pt grid, layout grids, hierarchy, white space, Gestalt. |
 | `references/color.md` | Palette construction, 60-30-10, tinting neutrals, contrast, dark mode, tasteful gradients. |
 | `references/typography.md` | Type scale, line height, measure, weight pairing, alignment, tabular numbers, wrapping. |

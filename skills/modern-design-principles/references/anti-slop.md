@@ -4,6 +4,8 @@
 
 Use it two ways: as a pre-flight check before shipping a new design, and as the first pass when reviewing existing UI.
 
+This file is the granular catalog of individual tells and their fixes. Its companion, [anti-slop-guidelines.md](anti-slop-guidelines.md), is the operating playbook: how to read a brief, pick one design direction, match the business model, handle redesigns, plus opinionated defaults and a final checklist. Read the playbook when starting a design; use this catalog when hunting and fixing specific tells.
+
 ## Copy tells
 
 Text is where slop is most obvious, because language has tells that pixels do not.
