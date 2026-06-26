@@ -6,7 +6,8 @@ Type is the primary carrier of hierarchy and the fastest way a design reads as e
 
 - **Sans serif is the safe default** for UI. Serif suits long-form reading (articles) and specific brand personalities, but rarely leads a product interface.
 - Pick a typeface that is **readable** (simple over fancy: the content is the point), **scalable** (legible at small sizes and good large), and that ships with **many weights** (at least 4 to 5, to build a real scale).
-- **Use one typeface** if you can. A system built on a single family is far easier to keep consistent. If you pair two, make them clearly different so there is real contrast (pairing two similar sans serifs gives you the cost of two fonts and the benefit of none).
+- **Use one typeface** if you can. A system built on a single family is far easier to keep consistent. If you pair two, keep them in the same category and get the contrast from weight, width, or size, not from mixing styles. Pairing two similar sans serifs gives you the cost of two fonts and none of the benefit.
+- **Do not combine serif and sans-serif type.** Keep the whole interface in one category: all sans or all serif. Mixing the two (a serif and a sans in one headline, or a serif heading over sans body) reads as an unconsidered system. Build hierarchy from weight, size, and spacing within one family instead. Monospace is the only exception, and only for code and raw identifiers as noted next.
 - Reserve **monospace for code, terminals, and raw identifiers** (hashes, keys, IDs). Monospace on labels, body, stats, or hero text to look "technical" is a slop tell. See [anti-slop.md](anti-slop.md).
 
 ## Type scale
